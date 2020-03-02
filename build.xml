@@ -1,0 +1,31 @@
+<project default="run">
+
+  <target name="clean">
+    <echo message="cleaning ..."/>
+    <delete dir="out" />
+  </target>
+
+  <target name="createOutDirectory" depends="clean">
+    <echo message="creating out directory..."/>
+    <mkdir dir="out" />
+  </target>
+
+  <target name="compile" depends="createOutDirectory">
+    <echo message="compiling..."/>
+    <javac srcdir="src" destdir="out" />
+  </target>
+
+  <target name="package"  depends="compile">
+    <mkdir dir="build/jar"/>
+    <jar destfile="build/jar/App.jar" basedir="">
+      <manifest>
+          <attribute  name="Main-Class" value="App" />
+      </manifest>
+    </jar>
+  </target>
+
+  <target name="run"  depends="package">
+    <java jar="build/jar/App.jar" fork="true" />
+  </target>
+
+</project>
