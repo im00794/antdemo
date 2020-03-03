@@ -9,7 +9,7 @@ public class Main {
         String[] tech = new String[]{"one","two","three"};
 
         for (String str : tech) {
-            System.out.println("-->"+str);
+            System.out.println("-->"+str+"!!!");
         }
     }
 }
