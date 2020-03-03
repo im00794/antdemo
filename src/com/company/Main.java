@@ -6,7 +6,7 @@ public class Main {
 	// write your code here
         System.out.println("hello");
 
-        String[] tech = new String[]{"mvn","ant","test"};
+        String[] tech = new String[]{"one","two","three"};
 
         for (String str : tech) {
             System.out.println("-->"+str);

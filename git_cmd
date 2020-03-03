@@ -1,0 +1,11 @@
+git checkout -b feature/add_smthg
+git add .
+git commit -m "test"
+git diff HEAD~1 HEAD --name-only
+git push -u origin feature/add_smthg
+
+git checkout -b feature/use_java8
+git add .
+git commit -m "use stream"
+git checkout master
+git merge feature/use_java8
