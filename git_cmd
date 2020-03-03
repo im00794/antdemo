@@ -10,3 +10,16 @@ git commit -m "use stream"
 git checkout master
 git merge feature/use_java8
 **fast forward**
+
+git stash
+git stash pop
+git checkout temp/temp-usage
+git add .
+git commit -m "stash "
+
+git cherry-pick
+git commit --amend -m --no-edit
+
+git commit squash
+
+git rebase -i
