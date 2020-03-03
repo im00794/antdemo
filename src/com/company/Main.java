@@ -10,6 +10,7 @@ public class Main {
 
         for (String str : tech) {
             System.out.println("-->"+str+"!!!");
+
         }
     }
 }
